@@ -549,3 +549,9 @@ writeLines(
 cat("\nReproducible simulation completed successfully.\n")
 cat("Results are saved in the output/ folder.\n")
 cat("Session information saved in sessionInfo.txt.\n")
+
+
+writeLines(
+  capture.output(sessionInfo()),
+  con = "sessionInfo.txt"
+)
