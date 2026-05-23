@@ -67,7 +67,7 @@ if (!dir.exists("output/variances")) {
 ## 3. Reproducibility seed
 ############################################################
 
-set.seed(12345)
+set.seed(678910)
 
 ############################################################
 ## 4. Model parameters and simulation settings
@@ -509,6 +509,14 @@ for (i in seq_along(gamma_values)) {
   saveRDS(
     fit_g$var_hat,
     file = paste0(
+      "output/variances/asymptotic_variance_covariance_gamma_",
+      g_label,
+      ".rds"
+    )
+  )
+  saveRDS(
+   diag(fit_g$var_hat),
+    file = paste0(
       "output/variances/asymptotic_variance_gamma_",
       g_label,
       ".rds"
@@ -553,4 +561,5 @@ writeLines(
 cat("\nReproducible simulation completed successfully.\n")
 cat("Results are saved in the output/ folder.\n")
 cat("Session information saved in sessionInfo.txt.\n")
+
 
