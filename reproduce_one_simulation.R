@@ -21,6 +21,8 @@ library(survival)
 library(numDeriv)
 library(Matrix)
 library(fda)
+library(VineCopula)
+library(condMVNorm)
 
 ############################################################
 ## 1. Source functions
@@ -28,6 +30,8 @@ library(fda)
 
 source("R/Distribution_Marginales_Simulation_Data.R")
 source("R/Distribution_marginales_10.R")
+source("R/Generate.Covariates.R")
+source("R/Proba.R")
 source("R/Generate.Survival_g.R")
 source("R/kinship.R")
 source("R/indices.R")
