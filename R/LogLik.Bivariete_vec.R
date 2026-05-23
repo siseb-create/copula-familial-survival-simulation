@@ -1,3 +1,13 @@
+############################################################
+## Vectorized bivariate likelihood contributions for B-hat
+##
+## This file contains vectorized versions of the family-specific
+## bivariate likelihood contributions. They are not used for
+## parameter estimation directly, but only for computing the
+## empirical covariance component B-hat in the robust asymptotic
+## variance calculation.
+############################################################
+
 NegLogLik.Biv_vec <- function(params,h,Data_Biv_00,Data_Biv_01,Data_Biv_10,Data_Biv_11,S1_00,SJ_00,SK_00,S1_01,SJ_01,SK_01,S1_10,SJ_10,SK_10,S1_11,SJ_11,SK_11)
 {
 Biva00<-cbind(-log(C001.bis(u1=SJ_00,u2=SK_00,u3=S1_00,r12=h*Data_Biv_00$kinJK,r13=h*Data_Biv_00$kin1J,r23=h*Data_Biv_00$kin1K)),Data_Biv_00$ID)
