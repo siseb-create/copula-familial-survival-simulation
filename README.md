@@ -50,7 +50,7 @@ The main reproducibility script is `reproduce_one_simulation.R`.
 
 The file `reproduce_B_simulations.R` is provided as an optional script for repeated simulations with \(B = 20\) by default. It is **not run automatically** and may require substantial running time because parameter estimation and robust asymptotic variance calculation are performed for each simulated data set and each value of the penalty parameter.
 
-The results from this optional script are **not included in the repository**. If users choose to run the script, the corresponding results will be generated locally and saved in the `output_B/` folder.
+The results from this optional script are **not included in the repository**. If users choose to run the script, the `output_B/` folder will be created automatically and the corresponding results will be saved locally in that folder.
 
 ## How to run the code
 
