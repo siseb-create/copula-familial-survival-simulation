@@ -1,16 +1,15 @@
+############################################################
+## Marginal functions for data simulation
+##
+## This file contains the marginal distribution functions required for the synthetic data
+## generation procedure used in the simulation study.
+############################################################
 
 # Pré-calcul une seule fois au début du script
 
-library(statmod)
 
 # Pré-calcul GL(50) sur [0,1]
-GL50 <- gauss.quad(50, kind = "legendre")
-GL50_nodes   <- 0.5 * GL50$nodes + 0.5
-GL50_weights <- 0.5 * GL50$weights   # longueur 50
 
-# ──────────────────────────────
-
-library(statmod)
 GL50 <- gauss.quad(50, kind = "legendre")
 GL50_nodes   <- 0.5 * GL50$nodes + 0.5      # transforme [-1,1] → [0,1]
 GL50_weights <- 0.5 * GL50$weights          # ajuste les poids
