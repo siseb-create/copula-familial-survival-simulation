@@ -23,6 +23,7 @@ library(Matrix)
 library(fda)
 library(VineCopula)
 library(condMVNorm)
+library(statmod)
 
 ############################################################
 ## 1. Source functions
