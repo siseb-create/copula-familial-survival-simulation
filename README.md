@@ -27,6 +27,7 @@ The simulation study aims to demonstrate the following components of the propose
 - `R/`: R functions used for data generation, likelihood evaluation, copula calculations, optimization, and variance estimation.
 - `reproduce_one_simulation.R`: main script used to generate one reproducible simulated data set and estimate the model.
 - `output/`: folder where generated results are saved locally.
+- `reproduce_B_simulations.R`: optional script for repeated simulations with B = 20 by default. This script is not run automatically; if executed, it creates an `output_B/` folder and saves the corresponding results locally.
 - `sessionInfo.txt`: information about the R session used to run the code.
 
 ## Output files
