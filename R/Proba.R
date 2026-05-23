@@ -1,3 +1,12 @@
+############################################################
+## Weibull parameter conversion functions
+##
+## This file contains utility functions for converting Weibull
+## parameters between mean-variance, shape-scale, and
+## alpha-lambda parameterizations.
+##
+## These conversions are used to define simulation settings .
+############################################################
 
 ff <- function(a,valeur=0) {(gamma(1+2/a)/((gamma(1+1/a))**2))-valeur}
 
