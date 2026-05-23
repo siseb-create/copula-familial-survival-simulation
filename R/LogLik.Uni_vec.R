@@ -1,4 +1,12 @@
 
+############################################################
+## Vectorized univariate likelihood contributions for B-hat
+##
+## This file contains vectorized univariate likelihood
+## contributions used to compute the empirical component
+## B-hat in the robust asymptotic variance calculation.
+############################################################
+
 NegLogLik.proband_vec <- function(params,data)
 {
 
