@@ -1,4 +1,11 @@
-library(condMVNorm)
+############################################################
+## Three-dimensional copula functions and derivatives
+##
+## This file contains the functions used to evaluate
+## three-dimensional copulas and their partial derivatives.
+## These quantities are used to model intra-family dependence
+## in the proposed survival model.
+############################################################
 
 C011.i <- function(i,u1,u2,u3,r12,r13,r23)
 {
@@ -24,11 +31,6 @@ Variance <- 1-(r12^2+r13^2-2*r12*r13*r23)/D
 Ecart.Type <- sqrt(Variance)
 pnorm(Z1,mean=Moyenne,sd=Ecart.Type,log.p=TRUE)
 }
-
-
-
-
-
 
 #########################################################
 
