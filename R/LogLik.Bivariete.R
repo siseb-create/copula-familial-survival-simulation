@@ -1,3 +1,12 @@
+############################################################
+## Bivariate likelihood for intra-family dependence
+##
+## This file contains the bivariate likelihood contributions
+## used to estimate the dependence parameter h. These likelihood
+## components are based on pairs of family members and are used
+## to capture intra-family dependence through the copula-based
+## structure of the proposed survival model.
+############################################################
 
 NegLogLik.Biv <- function(params,h,Data_Biv_00,Data_Biv_01,Data_Biv_10,Data_Biv_11,S1_00,SJ_00,SK_00,S1_01,SJ_01,SK_01,S1_10,SJ_10,SK_10,S1_11,SJ_11,SK_11)
 {
