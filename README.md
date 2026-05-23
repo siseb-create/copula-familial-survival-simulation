@@ -29,6 +29,10 @@ The simulation study aims to demonstrate the following components of the propose
 - `output/`: folder where generated results are saved locally.
 - `sessionInfo.txt`: information about the R session used to run the code.
 
+## Computational time
+
+For each value of the penalty parameter gamma, parameter estimation and robust asymptotic variance calculation take approximately 20 minutes on average for one simulated data set. The total running time depends on the computer and R environment.
+
 ## How to run the code
 
 To reproduce the simulation example, run:
@@ -36,6 +40,4 @@ To reproduce the simulation example, run:
 ```r
 source("reproduce_one_simulation.R")
 
-## Computational time
 
-For each value of the penalty parameter gamma, parameter estimation and robust asymptotic variance calculation take approximately 20 minutes on average for one simulated data set. The total running time depends on the computer and R environment.
