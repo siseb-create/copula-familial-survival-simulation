@@ -210,7 +210,7 @@ cat("Generating one simulated data set...\n")
 
 data <- Generate.data(
   I = I,
-  params = params,
+  theta = params,
   m.a = m.a,
   v.a = v.a,
   min.c = min.c,
