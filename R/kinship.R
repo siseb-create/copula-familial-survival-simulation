@@ -1,3 +1,16 @@
+############################################################
+## Kinship structure and extraction functions
+##
+## This file defines the kinship matrix used to represent the
+## family dependence structure in the synthetic data simulation.
+##
+## It also contains functions used to extract the kinship
+## coefficients between the proband and non-proband family
+## members, as well as the kinship coefficients required for
+## bivariate likelihood contributions involving pairs of
+## non-probands.
+############################################################
+
 kinship <- matrix(
   c(1,1/2,1/8,1/8,1/8,1/8,
     1/2,1,1/8,1/8,1/8,1/8,
