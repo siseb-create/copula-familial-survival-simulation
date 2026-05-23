@@ -44,6 +44,14 @@ For each value of the penalty parameter gamma, parameter estimation and robust a
 
 Since the script estimates the model for gamma = 0, 0.05, 0.2, and 0.8, the total running time may be approximately 80 minutes, depending on the computer and R environment.
 
+## Optional repeated simulation script
+
+The main reproducibility script is `reproduce_one_simulation.R`.
+
+The file `reproduce_B_simulations.R` is provided as an optional script for repeated simulations with \(B = 20\) by default. It is **not run automatically** and may require substantial running time because parameter estimation and robust asymptotic variance calculation are performed for each simulated data set and each value of the penalty parameter.
+
+The results from this optional script are **not included in the repository**. If users choose to run the script, the corresponding results will be generated locally and saved in the `output_B/` folder.
+
 ## How to run the code
 
 To reproduce the simulation example, run:
