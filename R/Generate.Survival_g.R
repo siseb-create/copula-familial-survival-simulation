@@ -1,8 +1,4 @@
 
-library(condMVNorm)
-
-source("Generate.Covariates.R")
-
 survie.cond <- function(t,a,theta,X1,X2,res=0) 
 {
 S.t <- survie_param(t,theta,X1,X2)
