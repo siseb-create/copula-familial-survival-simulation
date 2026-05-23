@@ -1,3 +1,14 @@
+
+############################################################
+## Robust asymptotic variance calculation
+##
+## This file contains the functions required to compute the
+## robust asymptotic variance-covariance matrix of the proposed
+## model. The variance estimator is based on the sandwich
+## formulation associated with the estimating equations.
+############################################################
+
+
 Creer.m<-function(Theta,data.proband,data.non.proband.delta.0,data.non.proband.delta.1,
                   Data_Biv_00,Data_Biv_01,Data_Biv_10,Data_Biv_11,S1_00,SJ_00,SK_00,S1_01,SJ_01,SK_01,S1_10,SJ_10,SK_10,S1_11,SJ_11,SK_11,gamma,P){
   
