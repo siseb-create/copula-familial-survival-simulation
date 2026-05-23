@@ -79,7 +79,7 @@ Var_asymp<-function(Theta,data.proband,data.non.proband.delta.0,data.non.proband
   
   # 4 expression de la variance
   
-  var.hat<-diag(solve(A.chapeau)%*%B.hat%*%solve(A.chapeau))/I
+  var.hat<-(solve(A.chapeau)%*%B.hat%*%solve(A.chapeau))/I
   
   return(var.hat)
 }
