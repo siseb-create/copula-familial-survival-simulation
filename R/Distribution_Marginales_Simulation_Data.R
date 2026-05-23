@@ -17,14 +17,6 @@ GL50_weights <- 0.5 * GL50$weights          # ajuste les poids
 
 # forme paramétrique de la fonction B-spline utilisée
 
-#g <- function(u) {sin((u+2)*pi/2)}
-
-#theta du bs-plines associée:
-
-#c(0.02655016, -0.80598376, -1.61015847,  1.61015847,  0.80598376, -0.02655016)
-#g <- function(u) {-dnorm(u,mean=1.5,sd=.5)+dnorm(u,mean=2.75,sd=.3)}
-
-#g <- function(t) {1.05 * (1 - exp(-3.2 * t)) + 0.18 * exp(-((t - 2.2)/0.55)^2)}
 g <- function(t) {  0.55 +  0.35 * sin(2*pi*t/1.8) * exp(-0.35*t) + 0.15 * (t/4)}
 
 # ──────────────────────────────
