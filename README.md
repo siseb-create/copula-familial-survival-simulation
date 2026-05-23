@@ -35,3 +35,7 @@ To reproduce the simulation example, run:
 
 ```r
 source("reproduce_one_simulation.R")
+
+## Computational time
+
+For each value of the penalty parameter gamma, parameter estimation and robust asymptotic variance calculation take approximately 20 minutes on average for one simulated data set. The total running time depends on the computer and R environment.
