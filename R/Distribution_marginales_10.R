@@ -1,5 +1,5 @@
 
-library(statmod)
+#library(statmod)
 GL50 <- gauss.quad(50, kind = "legendre")
 GL50_nodes   <- 0.5 * GL50$nodes + 0.5
 GL50_weights <- 0.5 * GL50$weights   # longueur 50
