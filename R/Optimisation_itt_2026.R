@@ -1,4 +1,16 @@
 
+############################################################
+## Iterative maximum likelihood estimation procedure
+##
+## This file contains the main function `compute.mle`, which
+## implements the iterative optimization procedure used to
+## estimate the parameters of the proposed model.
+##
+## The procedure alternates between the estimation of the
+## marginal parameters and the intra-family dependence
+## parameter h.
+############################################################
+
 compute.mle<-function(params, h,data.proband,data.non.proband.delta.0,data.non.proband.delta.1,Data_Biv_00,Data_Biv_01,Data_Biv_10,Data_Biv_11,gamma,P){
   
 
