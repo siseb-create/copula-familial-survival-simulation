@@ -1,3 +1,12 @@
+############################################################
+## Conditional and data generation functions
+##
+## This file contains the conditional functions used in the
+## data-generating mechanism, together with the procedures
+## required to simulate synthetic family-structured survival
+## data. These functions are used to generate event times
+## conditionally on the family structure and model parameters.
+############################################################
 
 survie.cond <- function(t,a,theta,X1,X2,res=0) 
 {
