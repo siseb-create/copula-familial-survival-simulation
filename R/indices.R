@@ -1,3 +1,17 @@
+############################################################
+## Indexing, data construction
+##
+## This file contains functions used to create family-level
+## indices and to construct the analysis data sets required
+## for the proposed familial survival model.
+##
+## The functions identify probands, non-probands, and bivariate
+## pairs of non-probands within each family. They are used to
+## build the proband, non-proband, and bivariate data sets
+## entering the likelihood contributions calculation.
+############################################################
+
+
 creer.indices.proband <- function(I)
 {
 seq(from=1,to=6*I-5,by=6)
