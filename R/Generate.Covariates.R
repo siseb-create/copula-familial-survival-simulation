@@ -1,3 +1,11 @@
+############################################################
+## Covariate and censoring generation functions
+##
+## This file contains the functions used to generate the
+## covariates required for the synthetic family-structured
+## survival data simulation.
+############################################################
+
 Generate.X1 <- function(p) {sample(x=c(-1,1),size=6,replace=TRUE,prob=c(1-p,p))}
 
 Generate.X2 <- function() {runif(6,min=0,max=4)}
